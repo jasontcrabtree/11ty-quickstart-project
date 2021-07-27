@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/static');
   eleventyConfig.addPassthroughCopy('./src/_redirects');
   eleventyConfig.addPassthroughCopy('./src/_headers');
-  
+
     eleventyConfig.addCollection('blog', (collection) => {
     return collection.getFilteredByGlob('src/blog/*.md');
   });
